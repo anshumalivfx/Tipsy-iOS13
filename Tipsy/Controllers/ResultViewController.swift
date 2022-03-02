@@ -9,12 +9,15 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var settingsLabel: UILabel!
-    
+    var total:String?
+    var settings:String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        totalLabel.text = total
+        settingsLabel.text = settings
         // Do any additional setup after loading the view.
     }
     
